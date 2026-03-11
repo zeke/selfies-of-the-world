@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "build:manifest": "node scripts/build-manifest.mjs",
+    "build:og": "node scripts/build-og.mjs",
     "dev": "npm run build:manifest && wrangler dev",
-    "deploy": "npm run build:manifest && wrangler deploy"
+    "deploy": "npm run build:manifest && npm run build:og && wrangler deploy"
   },
   "dependencies": {
     "hono": "^4.12.7"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260310.1",
+    "sharp": "^0.34.5",
     "typescript": "^5.9.3",
     "wrangler": "^4.72.0"
   }
