@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "selfies",
+  "compatibility_date": "2026-03-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/index.tsx",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/", "/images/*"]
+  },
+  "images": {
+    "binding": "IMAGES"
+  },
+  "routes": [
+    { "pattern": "selfies.ziki.boo", "custom_domain": true }
+  ]
+}
