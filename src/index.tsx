@@ -64,6 +64,11 @@ app.get("/", (c) => {
   <meta property="og:title" content="Selfies of the World">
   <meta property="og:description" content="AI photos of nonexistent people from every country.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://selfies.ziki.boo/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://selfies.ziki.boo/og.jpg">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
