@@ -15,10 +15,4 @@ npm install
 npm run dev
 ```
 
-## Deployment
-
-Deploys automatically via GitHub Actions on push to `main`. To deploy manually:
-
-```sh
-npm run deploy
-```
+See [AGENTS.md](AGENTS.md) for architecture details and commands.
