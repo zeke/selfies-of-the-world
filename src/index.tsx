@@ -60,26 +60,22 @@ app.get("/", (c) => {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Selfies of the World</title>
-  <meta name="description" content="AI-generated portrait photos of people from ${COUNTRIES.length} countries, created using Google's Nano Banana 2 model on Replicate.">
+  <meta name="description" content="AI photos of nonexistent people from every country, created using Google's Nano Banana 2 model on Replicate.">
   <meta property="og:title" content="Selfies of the World">
-  <meta property="og:description" content="AI-generated portraits from ${COUNTRIES.length} countries.">
+  <meta property="og:description" content="AI photos of nonexistent people from every country.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
-    <h1>Selfies of the World</h1>
-    <p class="preamble">
-      AI-generated portrait photos of people from ${COUNTRIES.length} countries, created using
-      <a href="https://replicate.com/google/nano-banana-2">Google's Nano Banana 2 model</a> on
-      <a href="https://replicate.com">Replicate</a>.
-      For each country, six portraits were generated: a young man, a young woman,
-      a nonbinary person, an elderly man, an elderly woman, and a child.
-      The images use a consistent prompt with natural lighting and a warm expression.
-    </p>
+    <a href="https://github.com/zeke/selfies-of-the-world" class="github-link">
+      ${octocatSvg}
+      zeke/selfies-of-the-world
+    </a>
+  
+
     <div class="search-wrap">
-      <input type="search" id="search" placeholder="Filter by country, subject..." autocomplete="off" aria-label="Filter images">
-      <span id="count">${TOTAL} of ${TOTAL}</span>
+      <input type="search" id="search" placeholder="Filter by country or subject" autocomplete="off" aria-label="Filter images">
     </div>
   </header>
 
