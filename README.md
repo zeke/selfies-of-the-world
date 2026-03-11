@@ -2,7 +2,7 @@
 
 AI-generated portrait photos of people from every country.
 
-https://selfies.ziki.boo
+[![Selfies of the World](https://selfies.ziki.boo/og.jpg)](https://selfies.ziki.boo)
 
 ## How it works
 
